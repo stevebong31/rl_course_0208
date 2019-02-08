@@ -86,6 +86,35 @@ Bootstrapping.
 MC : no bias. variance 가 높음.
 TD : high bias. variance 가 낮음. 
 
+# Exploitation and Explotation
+
+MC control with e-greedy PI
+
+샘플을 사용하기 때문에.
+
+# SARSA  using TD Control
+on policy.
+
+q learning 과의 차이점.
+
+sample된 action에 대한 value function으로 update
+가장 좋은 action에 대한 value function으로 update (q)
+
+# Policy Gradiant
+주어진 상태에 모든 액션들의 선택적 확률 분포도가 얼마나 좋은지 목적 함수를 설계해, 함수를 최대화 하는 방향으로 액션 선택.
+
+# Policy Parametrization
+정책의 평가를 목적함수를 사용.
+
+local optimal problem
+
+# Reinforce : MC 기반한 방법
+Approximation Q
+
+# Actor-Critic
+TD update.
+actor : policy update.
+
 
 
 
