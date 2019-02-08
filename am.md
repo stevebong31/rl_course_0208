@@ -115,6 +115,33 @@ Approximation Q
 TD update.
 actor : policy update.
 
+# Deep Reinforcement Learning
+
+DL이 RL에 적용되는 문제들 : state가 무한대에 가까운 문제.
+
+# DQN
+
+state : images
+
+action : control
+
+reward : score
+
+# Replay Buffer
+
+high correlation sample.
+make replay buffer(memory)
+
+# Moving Target
+
+terget과 같은 내트워크로 업데이터를 하기 때문에 타겟이 흔들린다.
+
+네트워크를 2개로 분리.
+
+# Structure of DQN
+
+CNN + fully connected = control
+
 
 
 
