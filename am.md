@@ -100,7 +100,7 @@ q learning 과의 차이점.
 sample된 action에 대한 value function으로 update
 가장 좋은 action에 대한 value function으로 update (q)
 
-# Policy Gradiant
+# Policy Gradient
 주어진 상태에 모든 액션들의 선택적 확률 분포도가 얼마나 좋은지 목적 함수를 설계해, 함수를 최대화 하는 방향으로 액션 선택.
 
 # Policy Parametrization
@@ -142,6 +142,41 @@ terget과 같은 내트워크로 업데이터를 하기 때문에 타겟이 흔�
 
 CNN + fully connected = control
 
+# High action space
+DQN을 로봇과 같은 액션이 많은 환경에서 사용할 수 없는 이유:
+
+high complexity action.
+
+연속적(많은) 액션의 가치를 추정하는 함수가 수행시 오래 걸림.
+
+복잡한 action space에서 q 가치함수의 형태가 복잡함.
+
+Low sample efficiency.
+
+
+# Policy Gradient Method
+
+Actor-critic method.
+
+DNN + AC
+
+# DDPG
+
+Actor / Critic 함수를 네트워크로 교체.
+
+Actor는 policy를 업데이트. Critic은 policy를 평가.
+
++Deterministic policy (제어 환경에서 환경은 쉽게 변화하지 않음)
+
+Deterministic policy : u 특정 상태에서 특정 액션을 취함.
+
+# On or Off Policy , Buffer
+
+Off Policy : replay buffer. (sample correlation delete)
+
+Target network : actor / critic 
+
+E greedy 방법 -> action noise.
 
 
 
